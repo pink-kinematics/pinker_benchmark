@@ -1,1 +1,2 @@
 pixi.lock merge=binary linguist-generated=true -diff
+results/*.parquet binary linguist-generated=true
