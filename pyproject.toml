@@ -12,6 +12,14 @@ authors = [
 ]
 dynamic = ['version', 'description']
 requires-python = ">=3.13"
+classifiers = [
+    "Framework :: Robot Framework :: Library",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering",
+]
 dependencies = [
     "matplotlib",
     "pin-pink ==4.4.0",
