@@ -25,12 +25,10 @@ This command runs all scenarios on your machine, storing measurements in the `re
 
 <!-- BEGIN BENCHMARK RESULTS -->
 
-Here are the results from running the benchmark on 2026-09-27 (aarch64, commit 440f2f80b) comparing pinker 0.1.0 to pink 4.4.0 (pinocchio 4.1.0). QP solver is clarabel, 10 rollouts per scenario, pinned to CPU 3.
+Here are the results from running the benchmark on 2026-09-27 (aarch64, commit 440f2f80b) comparing pinker 0.1.0 to pink 4.4.0 (pinocchio 4.1.0). QP solver is clarabel, 10 rollouts per scenario. The conclusions are that:
 
-From the data collected during this evaluation, we conclude that:
-
-1. **Same IK problems:** ✅, numerical variations less than 1e-09
-2. **Same performance:** ✅, timings variations less than 3%
+1. **Pinker produces the same IK problems as Pink:** ✅ (numerical variations less than 1e-09)
+2. **Pinker has the same performance as Pink:** ✅ (timings variations less than 3%)
 
 Here are the statistics scenario by scenario:
 
