@@ -1,0 +1,25 @@
+[build-system]
+requires = ["flit_core >=3.11,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "pinker_benchmark"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [
+    {name = "Stéphane Caron", email = "stephane.caron@normalesup.org"},
+]
+dynamic = ['version', 'description']
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib",
+    "pin-pink ==4.4.0",
+    "pink_motions >=0.3.0",
+    "pinker ==0.1.0a0",
+    "qpmpc >=2.6.3,<4",
+    "qpsolvers >=4.3.1",
+    "robot_descriptions ==3.0.0",
+    "tabulate[widechars] >=0.10.0",
+    "xacrodoc",
+]
