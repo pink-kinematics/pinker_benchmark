@@ -24,6 +24,48 @@ dependencies = [
     "xacrodoc",
 ]
 
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["linux-64", "linux-aarch64"]
+
+[tool.pixi.pypi-dependencies]
+pinker_benchmark = { path = ".", editable = true }
+
+[tool.pixi.dependencies]
+c-compiler = "*"
+clarabel = "*"
+daqp = "*"
+meshcat-python = "*"
+meshcat-shapes = ">=0.3.0"
+pinocchio = "==4.1.0"
+proxsuite = "*"
+pyarrow = "*"
+python = "3.13.*"
+scipy = "*"
+
+[tool.pixi.tasks]
+benchmark = "python -m pinker_benchmark.run"
+benchmark-report = "python -m pinker_benchmark.report"
+debug-scenario = "python -m pinker_benchmark.debug"
+
+[tool.pixi.feature.lint.dependencies]
+ruff = "*"
+
+[tool.pixi.feature.lint.tasks]
+dev-format = "ruff format . && ruff check . --fix"
+dev-lint = "ruff check ."
+
+[tool.pixi.feature.test.dependencies]
+pytest = ">=7.0"
+
+[tool.pixi.feature.test.tasks]
+dev-test = "pytest tests/ -v --tb=short"
+
+[tool.pixi.environments]
+default = { solve-group = "default" }
+lint = { features = ["lint"], solve-group = "default" }
+test = { features = ["test"], solve-group = "default" }
+
 [tool.pytest.ini_options]
 filterwarnings = ["ignore::qpsolvers.warnings.SparseConversionWarning"]
 
