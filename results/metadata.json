@@ -1,0 +1,133 @@
+{
+  "cpus": "3",
+  "date": "2026-09-22",
+  "dt": 0.005,
+  "machine": "aarch64",
+  "measurements": {
+    "bytes": 6417165,
+    "path": "b63fb5810.parquet",
+    "rows": 540000,
+    "sha256": "30e94e7714834a7b0be4bbe1005a919135b4d7a60b93870331db960597ae9f03"
+  },
+  "provenance": {
+    "changes": [],
+    "commit": "b63fb58105bbc2bd12ef6dedeb96232174be008e"
+  },
+  "qpsolver": "clarabel",
+  "rollouts": 10,
+  "scenarios": {
+    "atlas_drc": {
+      "nv": 36,
+      "steps": 2000
+    },
+    "atlas_v4": {
+      "nv": 36,
+      "steps": 2000
+    },
+    "bolt": {
+      "nv": 12,
+      "steps": 2000
+    },
+    "cassie": {
+      "nv": 22,
+      "steps": 2000
+    },
+    "draco3": {
+      "nv": 33,
+      "steps": 2000
+    },
+    "edo": {
+      "nv": 6,
+      "steps": 2000
+    },
+    "ergocub": {
+      "nv": 63,
+      "steps": 2000
+    },
+    "fanuc": {
+      "nv": 6,
+      "steps": 2000
+    },
+    "gen2": {
+      "nv": 6,
+      "steps": 2000
+    },
+    "gen3": {
+      "nv": 7,
+      "steps": 2000
+    },
+    "h1": {
+      "nv": 25,
+      "steps": 2000
+    },
+    "icub": {
+      "nv": 38,
+      "steps": 2000
+    },
+    "iiwa14": {
+      "nv": 7,
+      "steps": 2000
+    },
+    "jaxon": {
+      "nv": 44,
+      "steps": 2000
+    },
+    "jvrc": {
+      "nv": 50,
+      "steps": 2000
+    },
+    "panda": {
+      "nv": 9,
+      "steps": 2000
+    },
+    "poppy_ergo_jr": {
+      "nv": 6,
+      "steps": 2000
+    },
+    "r2": {
+      "nv": 62,
+      "steps": 2000
+    },
+    "romeo": {
+      "nv": 67,
+      "steps": 2000
+    },
+    "sigmaban": {
+      "nv": 26,
+      "steps": 2000
+    },
+    "spryped": {
+      "nv": 14,
+      "steps": 2000
+    },
+    "talos": {
+      "nv": 50,
+      "steps": 2000
+    },
+    "ur10": {
+      "nv": 6,
+      "steps": 2000
+    },
+    "ur3": {
+      "nv": 6,
+      "steps": 2000
+    },
+    "ur5": {
+      "nv": 6,
+      "steps": 2000
+    },
+    "valkyrie": {
+      "nv": 65,
+      "steps": 2000
+    },
+    "z1": {
+      "nv": 6,
+      "steps": 2000
+    }
+  },
+  "versions": {
+    "pink": "pink 4.4.0 (pinocchio 4.1.0)",
+    "pinker": "pinker 0.1.0-alpha",
+    "robot_descriptions": "robot_descriptions 3.0.0"
+  }
+}
