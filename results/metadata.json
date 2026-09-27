@@ -4,14 +4,14 @@
   "dt": 0.005,
   "machine": "aarch64",
   "measurements": {
-    "bytes": 6436346,
-    "path": "440f2f80b.parquet",
+    "bytes": 6436936,
+    "path": "751da6a89.parquet",
     "rows": 540000,
-    "sha256": "da22b10b2caaed56779043e247e1fc0b42e324435ca7cef5d3b5a31d3f792935"
+    "sha256": "90e1346e5f6ca5cf6e1bbc94e083d01cd2ecf735730480648f9c19a96b316be3"
   },
   "provenance": {
     "changes": [],
-    "commit": "440f2f80b88107b8c60a699267a8f3f814b2a8f9"
+    "commit": "751da6a898ca631e3640001cf81453195c59ca46"
   },
   "qpsolver": "clarabel",
   "rollouts": 10,
@@ -127,7 +127,7 @@
   },
   "versions": {
     "pink": "pink 4.4.0 (pinocchio 4.1.0)",
-    "pinker": "pinker 0.1.0",
+    "pinker": "pinker 1.0.0",
     "robot_descriptions": "robot_descriptions 3.0.0"
   }
 }
