@@ -6,7 +6,7 @@ build-backend = "flit_core.buildapi"
 name = "pinker_benchmark"
 readme = "README.md"
 license = "Apache-2.0"
-license-files = ["LICENSE"]
+license-files = ["LICENSE", "NOTICE"]
 authors = [
     {name = "Stéphane Caron", email = "stephane.caron@normalesup.org"},
 ]
