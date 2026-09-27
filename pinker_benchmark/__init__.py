@@ -14,7 +14,7 @@ from .scene import Scene
 # timed phase, so the warning is not relevant and disabled in the benchmark.
 warnings.filterwarnings("ignore", category=SparseConversionWarning)
 
-__version__ = "0.1.0"
+__version__ = "1.0.0"
 
 __all__ = [
     "Scenario",
