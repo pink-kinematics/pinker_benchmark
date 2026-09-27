@@ -213,9 +213,9 @@ class Report:
             f" QP solver is {results.qpsolver}, {results.rollouts} rollouts"
             f" per scenario. The conclusions are that:",
             "",
-            "1. Pinker yields the same IK as Pink: "
+            "1. **Pinker produces the same IK problems as Pink:** "
             f"{conclusion['ik']} ({ik_fact})",
-            "2. Pinker has the same performance as Pink: "
+            "2. **Pinker has the same performance as Pink:** "
             f"{conclusion['perf']} ({perf_fact})",
             "",
             "Here are the statistics scenario by scenario:",

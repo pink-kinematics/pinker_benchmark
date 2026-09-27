@@ -522,14 +522,14 @@ class TestReport:
         """A reader is told what the run concludes before how it got there."""
         markdown = flat_report.to_markdown()
         conclusion = markdown.split("| scenario")[0]
-        assert "we conclude that:" in conclusion
+        assert "The conclusions are that:" in conclusion
         assert (
-            f"1. **Same IK problems:** {PASS_MARK}, numerical variations"
-            " less than" in conclusion
+            f"1. **Pinker produces the same IK problems as Pink:** {PASS_MARK}"
+            " (numerical variations less than" in conclusion
         )
         assert (
-            f"2. **Same performance:** {PASS_MARK}, timings variations less"
-            " than" in conclusion
+            f"2. **Pinker has the same performance as Pink:** {PASS_MARK}"
+            " (timings variations less than" in conclusion
         )
         assert "Here are the statistics scenario by scenario:" in (conclusion)
         assert markdown.rstrip().endswith(
@@ -558,12 +558,12 @@ class TestReport:
         # A failed criterion states what was measured, not the bound that
         # did not hold: "less than 1e-9" would be false here.
         assert (
-            f"1. **Same IK problems:** {FAIL_MARK}, numerical variations"
-            " up to 1e-06" in markdown
+            f"1. **Pinker produces the same IK problems as Pink:** {FAIL_MARK}"
+            " (numerical variations up to 1e-06" in markdown
         )
         assert (
-            f"2. **Same performance:** {PASS_MARK}, timings variations less"
-            " than" in markdown
+            f"2. **Pinker has the same performance as Pink:** {PASS_MARK}"
+            " (timings variations less than" in markdown
         )
 
     def test_conclusion_of_an_unresolved_bench(
@@ -583,8 +583,9 @@ class TestReport:
         }
         # Unresolved rules nothing out: the margin may well be exceeded.
         assert (
-            f"2. **Same performance:** {UNRESOLVED_MARK}, timings variations"
-            " possibly above" in Report(run).to_markdown()
+            f"2. **Pinker has the same performance as Pink:**"
+            f" {UNRESOLVED_MARK} (timings variations possibly above"
+            in Report(run).to_markdown()
         )
 
     def test_conclusion_of_an_empty_run(self):
