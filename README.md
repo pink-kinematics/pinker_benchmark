@@ -11,6 +11,16 @@ Our goal is to make sure that there was no regression from Pink to Pinker. We ch
 
 The target architecture reported below is the Raspberry Pi 4 Model B.
 
+## Usage
+
+This benchmark uses [pixi](https://pixi.sh) to handle dependencies and run tasks. To regenerate results, call:
+
+```console
+pixi run benchmark
+```
+
+This command runs all scenarios on your machine, storing measurements in the `results/` sub-directory and updating the Results section below automatically.
+
 ## Results
 
 <!-- BEGIN BENCHMARK RESULTS -->
@@ -57,13 +67,3 @@ Here are the statistics scenario by scenario:
 The data corresponding to this run is available in the `results/` directory.
 
 <!-- END BENCHMARK RESULTS -->
-
-## Usage
-
-We use [pixi](https://pixi.sh) to handle dependencies and run tasks. To regenerate the above results, simply call:
-
-```console
-pixi run benchmark
-```
-
-This command runs the whole benchmark on your machine, storing measurements in the `results/` sub-directory and updating the Results section above.
