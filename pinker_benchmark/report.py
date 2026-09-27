@@ -224,7 +224,7 @@ class Report:
             f"1. **Same IK problems:** {conclusion['ik']}, {ik_fact}",
             f"2. **Same performance:** {conclusion['perf']}, {perf_fact}",
             "",
-            "Here are the overall statistics scenario by scenario:",
+            "Here are the statistics scenario by scenario:",
             "",
         ]
         lines += self.table()

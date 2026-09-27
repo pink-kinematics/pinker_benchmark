@@ -22,7 +22,7 @@ From the data collected during this evaluation, we conclude that:
 1. **Same IK problems:** ✅, numerical variations less than 1e-09
 2. **Same performance:** ✅, timings variations less than 3%
 
-Here are the overall statistics scenario by scenario:
+Here are the statistics scenario by scenario:
 
 | scenario      | nv | max QP distance | IK check | Pink step (ms) | Pinker step (ms) | step var. (%) | perf check |
 |:--------------|---:|----------------:|:---------|---------------:|-----------------:|--------------:|:-----------|

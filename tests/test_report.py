@@ -532,9 +532,7 @@ class TestReport:
             f"2. **Same performance:** {PASS_MARK}, timings variations less"
             " than" in conclusion
         )
-        assert "Here are the overall statistics scenario by scenario:" in (
-            conclusion
-        )
+        assert "Here are the statistics scenario by scenario:" in (conclusion)
         assert markdown.rstrip().endswith(
             "The data corresponding to this run is available in the"
             " `results/` directory."
