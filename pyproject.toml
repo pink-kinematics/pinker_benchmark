@@ -32,6 +32,11 @@ dependencies = [
     "xacrodoc",
 ]
 
+[project.urls]
+Source = "https://github.com/pink-kinematics/pinker_benchmark"
+Tracker = "https://github.com/pink-kinematics/pinker_benchmark/issues"
+Changelog = "https://github.com/pink-kinematics/pinker_benchmark/blob/main/CHANGELOG.md"
+
 [tool.pixi.workspace]
 channels = ["conda-forge"]
 platforms = ["linux-64", "linux-aarch64"]
