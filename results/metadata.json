@@ -1,17 +1,17 @@
 {
   "cpus": "3",
-  "date": "2026-09-22",
+  "date": "2026-09-27",
   "dt": 0.005,
   "machine": "aarch64",
   "measurements": {
-    "bytes": 6417165,
-    "path": "b63fb5810.parquet",
+    "bytes": 6429798,
+    "path": "67f92080c.parquet",
     "rows": 540000,
-    "sha256": "30e94e7714834a7b0be4bbe1005a919135b4d7a60b93870331db960597ae9f03"
+    "sha256": "41f1e6acfcef37aa5baaef97b90bd96107175eebbc1ed7ca96c05cd316a4705f"
   },
   "provenance": {
     "changes": [],
-    "commit": "b63fb58105bbc2bd12ef6dedeb96232174be008e"
+    "commit": "67f92080c064b62b793722d74d580c6134c8c881"
   },
   "qpsolver": "clarabel",
   "rollouts": 10,
