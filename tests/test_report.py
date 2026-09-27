@@ -517,7 +517,6 @@ class TestReport:
         assert "comparing pinker 0.1.0 to pink 4.2.0" in first
         assert "QP solver is clarabel" in first
         assert f"{NB_ROLLOUTS} rollouts per scenario" in first
-        assert "pinned to CPU 3" in first
 
     def test_conclusion_comes_before_the_table(self, flat_report):
         """A reader is told what the run concludes before how it got there."""

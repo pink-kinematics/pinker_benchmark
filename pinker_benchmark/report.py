@@ -186,11 +186,6 @@ class Report:
             what that table cannot show.
         """
         results = self.results
-        cpus = results.cpus
-        pinning = "not pinned to any CPU"
-        if cpus:
-            plural = "s" if "," in cpus else ""
-            pinning = f"pinned to CPU{plural} {cpus}"
         pink_version = results.versions.get("pink", "pink")
         pinker_version = results.versions.get("pinker", "pinker")
         provenance = results.provenance
@@ -216,13 +211,12 @@ class Report:
             f" {results.date} ({results.machine}{commit}) comparing"
             f" {pinker_version} to {pink_version}."
             f" QP solver is {results.qpsolver}, {results.rollouts} rollouts"
-            f" per scenario, {pinning}.",
+            f" per scenario. The conclusions are that:",
             "",
-            "From the data collected during this evaluation, we conclude"
-            " that:",
-            "",
-            f"1. **Same IK problems:** {conclusion['ik']}, {ik_fact}",
-            f"2. **Same performance:** {conclusion['perf']}, {perf_fact}",
+            "1. Pinker yields the same IK as Pink: "
+            f"{conclusion['ik']} ({ik_fact})",
+            "2. Pinker has the same performance as Pink: "
+            f"{conclusion['perf']} ({perf_fact})",
             "",
             "Here are the statistics scenario by scenario:",
             "",
